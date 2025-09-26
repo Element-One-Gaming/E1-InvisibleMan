@@ -1,8 +1,3 @@
-﻿// E1 Invisible Man (1vX) – CounterStrikeSharp v1.0.340
-// Console: e1_* | Chat: !set, !random, !start, !stop, !reload, !save
-// Build: .NET 8
-// ModuleVersion: 1.3.2
-
 using System;
 using System.Collections.Generic;
 using System.IO;
