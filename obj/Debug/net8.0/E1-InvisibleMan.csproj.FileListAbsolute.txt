@@ -52,3 +52,4 @@ D:\Repos\Element-One-Invisible-Man\E1-InvisibleMan\obj\Debug\net8.0\E1-Invisible
 D:\Repos\Element-One-Invisible-Man\E1-InvisibleMan\obj\Debug\net8.0\refint\E1-InvisibleMan.dll
 D:\Repos\Element-One-Invisible-Man\E1-InvisibleMan\obj\Debug\net8.0\E1-InvisibleMan.pdb
 D:\Repos\Element-One-Invisible-Man\E1-InvisibleMan\obj\Debug\net8.0\ref\E1-InvisibleMan.dll
+D:\Repos\Element-One-Invisible-Man\E1-InvisibleMan\obj\Debug\net8.0\E1-InvisibleMan.sourcelink.json
