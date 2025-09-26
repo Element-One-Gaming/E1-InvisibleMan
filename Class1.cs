@@ -427,7 +427,7 @@ public class E1InvisibleManPlugin : BasePlugin
         if (target == null || !target.IsValid) { PrintTo(caller, $"No player found for '{arg}'."); return; }
 
         _ghost = target; _modeActive = true; _revealUntilUtc = DateTime.MinValue; ClearAllPendingRefunds();
-        Server.PrintToChatAll($"[E1] Ghost selected: {target.PlayerName}. Ghost is invisible except briefly on noise.");
+        Server.PrintToChatAll($"[E1] Invisible Man selected: {target.PlayerName}. Invisible Man is invisible except when making noise.");
     }
 
     private void CmdRandomGhost(CCSPlayerController? caller, CommandInfo command)
@@ -437,20 +437,20 @@ public class E1InvisibleManPlugin : BasePlugin
 
         var idx = Random.Shared.Next(players.Count);
         _ghost = players[idx]; _modeActive = true; _revealUntilUtc = DateTime.MinValue; ClearAllPendingRefunds();
-        Server.PrintToChatAll($"[E1] Random Ghost is {_ghost!.PlayerName}");
+        Server.PrintToChatAll($"[E1] Random Invisible Man is {_ghost!.PlayerName}");
     }
 
     private void CmdStart(CCSPlayerController? caller, CommandInfo command)
     {
         if (_ghost == null || !_ghost.IsValid) PrintTo(caller, "Warning: no Ghost selected yet. Use e1_set.");
-        else Server.PrintToChatAll("[E1] Ghost mode active.");  
+        else Server.PrintToChatAll("[E1] Invisible Man mode active.");  
         _modeActive = true;
     }
 
     private void CmdStop(CCSPlayerController? caller, CommandInfo command)
     {
         _modeActive = false; _ghost = null; _revealUntilUtc = DateTime.MinValue; ClearAllPendingRefunds();
-        Server.PrintToChatAll("[E1] Ghost mode stopped.");
+        Server.PrintToChatAll("[E1] Invisible Man mode stopped.");
     }
 
     private void CmdReload(CCSPlayerController? caller, CommandInfo command)
